@@ -26,8 +26,8 @@ function ArticleAnalysisPage() {
     console.log('Input:', input, 'Is URL:', isUrlValue);
 
     try {
-      console.log('Making API call to http://localhost:5001/api/analyze');
-      const response = await axios.post('http://localhost:5001/api/analyze', {
+      console.log('Making API call to https://bias-buster-backend.onrender.com/api/analyze');
+      const response = await axios.post('https://bias-buster-backend.onrender.com/api/analyze', {
         content: input,
         isUrl: isUrlValue
       });
